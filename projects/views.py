@@ -3,8 +3,8 @@ from django.http import HttpResponse
 
 
 def project(request):
-    return HttpResponse('this is home page')
+    return render(request,'project.html')
 
 
-def pro(request, pk):
+def projects(request, pk):
     return HttpResponse('this is a redirect from home page to page no :' + str(pk))
