@@ -3,7 +3,7 @@ from django.http import HttpResponse
 
 
 def project(request):
-    return render(request,'project.html')
+    return render(request,'projects\project.html')
 
 
 def projects(request, pk):
