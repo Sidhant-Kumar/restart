@@ -6,5 +6,5 @@ def project(request):
     return render(request,'projects\project.html')
 
 
-def projects(request, pk):
-    return HttpResponse('this is a redirect from home page to page no :' + str(pk))
+def projects(request):
+    return render(request,'projects\second.html')
