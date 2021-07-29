@@ -22,9 +22,9 @@ projectList = [
 
 
 def project(request):
-    projects = Project.objects.all()
+    #projects = Project.objects.all()
     #print('projects:', projects)
-    context = {'projects': projects}
+    context = {'projects': projectList}
     return render(request, 'projects\project.html', context)
 
 
